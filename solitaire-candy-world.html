@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solitaire Candy World | Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="bg__glow glow-1"></div>
+    <div class="bg__glow glow-2"></div>
+    <div class="bg__grid"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">Ghanasyam<span>KR</span></a>
+    <nav class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#systems">Systems</a>
+      <a href="#retention">Retention</a>
+      <a href="#tools">Tools</a>
+      <a href="#ai">AI</a>
+      <a href="#results">Results</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn ghost" href="index.html">Back to portfolio</a>
+      <a class="btn accent" href="https://play.google.com/store/apps/details?id=com.superhugestudios.candyworld.free.harvest&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal case-hero" id="top">
+      <div class="hero__text">
+        <p class="eyebrow">Case study</p>
+        <h1>Solitaire Candy World</h1>
+        <p class="lede">A LiveOps-first solitaire with retention loops, modular gameplay systems, and production tooling built to keep content shipping fast.</p>
+        <div class="hero__cta">
+          <a class="btn accent" href="https://play.google.com/store/apps/details?id=com.superhugestudios.candyworld.free.harvest&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
+          <a class="btn ghost" href="index.html#featured">Back to featured</a>
+          <div class="contact-line">
+            <span>Role: Senior Unity Developer</span>
+            <span class="divider"></span>
+            <span>Android</span>
+          </div>
+        </div>
+        <div class="hero__tags">
+          <span class="tag">Hybrid casual</span>
+          <span class="tag">LiveOps</span>
+          <span class="tag">Factory + Command</span>
+          <span class="tag">EasyBundle</span>
+          <span class="tag">Retention loops</span>
+        </div>
+      </div>
+      <div class="hero__panel">
+        <div class="video-frame">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/DKd2MVj9w3I"
+              title="Solitaire Candy World gameplay video"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="featured__meta">
+          <div class="meta-card">
+            <p class="meta-label">Studio</p>
+            <p class="meta-value">Super Huge Studios</p>
+          </div>
+          <div class="meta-card">
+            <p class="meta-label">Focus</p>
+            <p class="meta-value">Gameplay + LiveOps</p>
+          </div>
+          <div class="meta-card">
+            <p class="meta-label">Duration</p>
+            <p class="meta-value">2023 - Present</p>
+          </div>
+          <div class="meta-card">
+            <p class="meta-label">Status</p>
+            <p class="meta-value">Live release</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal" id="overview">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Overview</p>
+          <h2>Building a scalable solitaire for live content updates.</h2>
+        </div>
+        <p class="muted">The goal was to launch a feature-complete solitaire that could scale events, economy, and content drops without tech debt slowing the team down.</p>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3>Goals</h3>
+          <ul class="bullets">
+            <li>Ship a polished solitaire loop with reliable undo and modular mechanics.</li>
+            <li>Design a LiveOps-ready architecture for fast experiments and events.</li>
+            <li>Reduce draw calls and loading overhead across UI-heavy flows.</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>My role</h3>
+          <ul class="bullets">
+            <li>Owned gameplay systems, architecture patterns, and feature integrations.</li>
+            <li>Built tooling and asset pipeline improvements for content speed.</li>
+            <li>Partnered with design to tune retention, economy, and progression.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal" id="systems">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Gameplay systems</p>
+          <h2>Modular mechanics with reliable undo.</h2>
+        </div>
+        <p class="muted">Systems were built with Factory and Command patterns to enable fast feature additions and stable undo flows.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Command-driven moves</h3>
+          <p class="muted">Every player action is encapsulated, making undo and analytics consistent and safe.</p>
+        </article>
+        <article class="card">
+          <h3>Factory-based rules</h3>
+          <p class="muted">Game rules and table setups are data-driven for rapid event reskins and variations.</p>
+        </article>
+        <article class="card">
+          <h3>State + persistence</h3>
+          <p class="muted">Session recovery and save state handle long play sessions and offline continuity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal" id="retention">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Retention + LiveOps</p>
+          <h2>Loops designed for daily return.</h2>
+        </div>
+        <p class="muted">Progression, economy, and event hooks were built to support rapid iteration and cohort testing.</p>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3>Retention features</h3>
+          <ul class="bullets">
+            <li>Daily rewards, streaks, and session goals tied to progression.</li>
+            <li>Event hooks that can be toggled per cohort.</li>
+            <li>IAP and subscription improvements aligned to milestone moments.</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Metrics (add real data later)</h3>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <p class="stat-value">+X%</p>
+              <p class="stat-label">D1 retention</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">-X%</p>
+              <p class="stat-label">session drop-off</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">+X%</p>
+              <p class="stat-label">IAP conversion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal" id="tools">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Editor tools</p>
+          <h2>Tools that keep content shipping.</h2>
+        </div>
+        <p class="muted">Custom editor tooling kept designers fast and reduced iteration time on content drops.</p>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3>EasyBundle pipeline</h3>
+          <ul class="bullets">
+            <li>Modular asset loading and clean versioning for live updates.</li>
+            <li>UI performance tuning to reduce draw calls and memory spikes.</li>
+            <li>Flexible content packs for theme swaps and events.</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Designer-friendly tooling</h3>
+          <ul class="bullets">
+            <li>Inspector helpers and view bridges for faster tuning.</li>
+            <li>Debug surfaces for economy, progression, and table layouts.</li>
+            <li>Automation for test sessions and analytics validation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal" id="results">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Results</p>
+          <h2>Outcomes you can swap with real numbers.</h2>
+        </div>
+        <p class="muted">Replace placeholders with actual metrics once you are ready to publish them.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Content velocity</h3>
+          <p class="muted">Reduced setup time for events and content drops by X%.</p>
+        </article>
+        <article class="card">
+          <h3>Performance gains</h3>
+          <p class="muted">Cut UI draw calls by X and improved load time by Y%.</p>
+        </article>
+        <article class="card">
+          <h3>Retention lift</h3>
+          <p class="muted">Boosted D1/D7 retention through tuned progression and LiveOps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal" id="contact">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to build the next release.</h2>
+        </div>
+        <p class="muted">Let us move fast on your next prototype, production push, or LiveOps roadmap.</p>
+      </div>
+      <div class="contact-panel">
+        <div>
+          <p class="muted">Email</p>
+          <a class="contact-link" href="mailto:ghanasyamkr@gmail.com">ghanasyamkr@gmail.com</a>
+        </div>
+        <div>
+          <p class="muted">Phone</p>
+          <a class="contact-link" href="tel:+919633622377">+91 96336 22377</a>
+        </div>
+        <div>
+          <p class="muted">LinkedIn</p>
+          <a class="contact-link" href="https://linkedin.com/in/ghanasyamkr" target="_blank" rel="noreferrer">linkedin.com/in/ghanasyamkr</a>
+        </div>
+        <div>
+          <p class="muted">GitHub</p>
+          <a class="contact-link" href="https://github.com/GhanasyamX" target="_blank" rel="noreferrer">github.com/GhanasyamX</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Solitaire Candy World case study.</p>
+    <a href="index.html">Back to portfolio</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

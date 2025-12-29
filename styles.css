@@ -97,6 +97,8 @@ main {
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .brand span {
@@ -418,6 +420,99 @@ main {
   gap: 10px;
 }
 
+.featured {
+  padding: 32px;
+}
+
+.featured__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.featured__media {
+  display: grid;
+  gap: 12px;
+}
+
+.video-frame {
+  background: var(--panel-strong);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 12px;
+}
+
+.video-embed {
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(6, 9, 16, 0.5);
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: radial-gradient(circle at top right, rgba(246, 169, 59, 0.2), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(92, 225, 230, 0.2), transparent 55%),
+    rgba(10, 16, 30, 0.85);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 18px;
+}
+
+.video-title {
+  margin: 0 0 6px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.featured__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.featured__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 0 0 16px;
+}
+
+.meta-card {
+  background: var(--panel-strong);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.meta-label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.meta-value {
+  margin: 6px 0 0;
+  font-weight: 700;
+}
+
+.featured__content h3 {
+  margin: 0 0 8px;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -487,6 +582,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .featured__grid {
+    grid-template-columns: 1fr;
+  }
+
   .top-actions {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -526,6 +625,10 @@ main {
 
   .hero,
   .panel {
+    padding: 22px;
+  }
+
+  .featured {
     padding: 22px;
   }
 
