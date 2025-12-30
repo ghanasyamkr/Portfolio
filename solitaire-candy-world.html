@@ -59,14 +59,22 @@
       <div class="hero__panel">
         <div class="video-frame">
           <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/DKd2MVj9w3I"
-              title="Solitaire Candy World gameplay video"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+            <video
+              src="assets/SolitareGameplay.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Solitaire Candy World gameplay">
+            </video>
+            <button class="video-fullscreen" type="button" data-fullscreen-target="video" aria-label="Enter full screen" aria-pressed="false">
+              <img class="video-fullscreen__icon" src="assets/fullscreen.png" alt="" aria-hidden="true" />
+              <span class="video-fullscreen__text sr-only">Full</span>
+            </button>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
           </div>
         </div>
         <div class="featured__meta">
@@ -163,16 +171,20 @@
           <h3>Metrics (add real data later)</h3>
           <div class="stat-grid">
             <div class="stat-card">
-              <p class="stat-value">+X%</p>
+              <p class="stat-value">42%</p>
               <p class="stat-label">D1 retention</p>
             </div>
             <div class="stat-card">
-              <p class="stat-value">-X%</p>
-              <p class="stat-label">session drop-off</p>
+              <p class="stat-value">17%</p>
+              <p class="stat-label">D7 retention</p>
             </div>
             <div class="stat-card">
-              <p class="stat-value">+X%</p>
-              <p class="stat-label">IAP conversion</p>
+              <p class="stat-value">$12</p>
+              <p class="stat-label">ARPPU</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">50K+</p>
+              <p class="stat-label">downloads</p>
             </div>
           </div>
         </div>
@@ -189,11 +201,11 @@
       </div>
       <div class="columns">
         <div class="column">
-          <h3>EasyBundle pipeline</h3>
+          <h3>Economy tuning bot</h3>
           <ul class="bullets">
-            <li>Modular asset loading and clean versioning for live updates.</li>
-            <li>UI performance tuning to reduce draw calls and memory spikes.</li>
-            <li>Flexible content packs for theme swaps and events.</li>
+            <li>Automated 10K simulated runs per minute to stress-test economy balance.</li>
+            <li>Surfaced outliers in reward pacing, sink health, and soft-currency inflation.</li>
+            <li>Exported tuning reports for designers to iterate without code changes.</li>
           </ul>
         </div>
         <div class="column">

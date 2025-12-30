@@ -23,7 +23,6 @@
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="top-actions">
@@ -35,11 +34,12 @@
   </header>
 
   <main>
-    <section class="hero reveal" id="top">
+    <section class="hero hero--simple reveal" id="top">
       <div class="hero__text">
         <p class="eyebrow">Senior Unity Developer - Bangalore</p>
-        <h1>Ghanasyam K.R builds expressive play spaces across hyper, hybrid, and mid-core.</h1>
+        <h1>Ghanasyam K.R builds expressive play spaces across casual, hyper, hybrid, and mid-core.</h1>
         <p class="lede">I am Ghanasyam K.R, a Unity-focused engineer with 6 years of designing gameplay systems, modular frameworks, and LiveOps-ready pipelines. I obsess over clean architecture, fast iteration, and performance that keeps players in flow.</p>
+        <p class="hero__current">Currently at Super Huge Studios, building reusable architecture and gameplay systems.</p>
         <div class="hero__cta">
           <a class="btn accent" href="#featured">View featured project</a>
           <a class="btn ghost" href="#projects">See more projects</a>
@@ -52,37 +52,7 @@
         <div class="hero__tags">
           <span class="tag">Unity - C#</span>
           <span class="tag">Gameplay Systems</span>
-          <span class="tag">Framework Design</span>
-          <span class="tag">Performance Ops</span>
           <span class="tag">LiveOps</span>
-        </div>
-      </div>
-      <div class="hero__panel">
-        <div class="stat-grid">
-          <div class="stat-card">
-            <p class="stat-value">6 yrs</p>
-            <p class="stat-label">Unity engineering</p>
-          </div>
-          <div class="stat-card">
-            <p class="stat-value">Framework</p>
-            <p class="stat-label">HyperCore for rapid prototyping</p>
-          </div>
-          <div class="stat-card">
-            <p class="stat-value">LiveOps</p>
-            <p class="stat-label">Hybrid and hyper-casual launches</p>
-          </div>
-        </div>
-        <div class="panel-block">
-          <div class="panel-title">Currently</div>
-          <div class="panel-body">
-            <p>Senior Unity Developer at Super Huge Studios, leading reusable architecture, gameplay systems, and internal tooling that shorten build times and keep teams shipping.</p>
-            <div class="chips">
-              <span class="chip">HyperCore</span>
-              <span class="chip">CatWool</span>
-              <span class="chip">Solitaire Candy World</span>
-              <span class="chip">ChessBlitz</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -99,53 +69,39 @@
         <div class="featured__media">
           <div class="video-frame">
             <div class="video-embed">
-              <iframe
-                src="https://www.youtube.com/embed/DKd2MVj9w3I"
-                title="Solitaire Candy World gameplay video"
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
+            <video
+              src="assets/SolitareGameplay.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Solitaire Candy World gameplay">
+            </video>
+            <button class="video-fullscreen" type="button" data-fullscreen-target="video" aria-label="Enter full screen" aria-pressed="false">
+              <img class="video-fullscreen__icon" src="assets/fullscreen.png" alt="" aria-hidden="true" />
+              <span class="video-fullscreen__text sr-only">Full</span>
+            </button>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
           </div>
           <div class="featured__actions">
             <a class="btn accent" href="https://play.google.com/store/apps/details?id=com.superhugestudios.candyworld.free.harvest&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
             <a class="btn ghost" href="solitaire-candy-world.html">Read the case study</a>
-            <a class="btn ghost" href="#contact">Work with me</a>
           </div>
         </div>
         <div class="featured__content">
-          <div class="featured__meta">
-            <div class="meta-card">
-              <p class="meta-label">Role</p>
-              <p class="meta-value">Senior Unity Developer</p>
-            </div>
-            <div class="meta-card">
-              <p class="meta-label">Focus</p>
-              <p class="meta-value">Gameplay + LiveOps</p>
-            </div>
-            <div class="meta-card">
-              <p class="meta-label">Platform</p>
-              <p class="meta-value">Android</p>
-            </div>
-            <div class="meta-card">
-              <p class="meta-label">Status</p>
-              <p class="meta-value">Live release</p>
-            </div>
-          </div>
           <h3>What I built</h3>
           <ul class="bullets">
             <li>Gameplay built with Factory and Command patterns for undo and modular mechanics.</li>
-            <li>EasyBundle for modular asset loading; UI tuned to cut draw calls.</li>
-            <li>IAP and subscription improvements plus LiveOps feature support.</li>
+            <li>EasyBundle and LiveOps improvements for fast updates and performance tuning.</li>
           </ul>
           <h3>Stack</h3>
           <div class="chips">
             <span class="chip">Unity</span>
             <span class="chip">C#</span>
-            <span class="chip">Factory + Command</span>
-            <span class="chip">EasyBundle</span>
             <span class="chip">LiveOps</span>
           </div>
         </div>
@@ -160,75 +116,104 @@
         </div>
         <p class="muted">A growing list of shipped builds. More non-featured projects and videos are on the way.</p>
       </div>
-      <div class="grid">
-        <article class="card project">
+      <div class="grid projects-grid">
+        <article class="card project" data-initial-project="catwool">
+          <div class="project-media project-media--logo">
+            <img class="project-media-logo" src="assets/unityLogo.jpg" alt="Unity logo" />
+          </div>
           <div class="card-header">
-            <h3>HyperCore</h3>
+            <div class="card-title">
+              <img class="card-icon" src="assets/unityLogo.jpg" alt="Unity logo" />
+              <h3>HyperCore</h3>
+            </div>
             <span class="pill">Framework</span>
           </div>
           <p class="muted">Reusable Unity framework for hyper-casual prototyping and production with DI, analytics, lifecycle helpers, and sensory managers.</p>
-          <ul class="bullets">
-            <li>Standardized templates for new titles; reduces setup time significantly.</li>
-            <li>Plug-and-play utilities and extensions keep codebases lean and maintainable.</li>
-          </ul>
           <a class="btn ghost" href="https://github.com/GhanasyamX/HyperCore" target="_blank" rel="noreferrer">View on GitHub</a>
         </article>
         <article class="card project">
+          <div class="project-media project-media--video">
+            <video class="project-media-video" src="assets/CatwoolVideo.mp4" autoplay muted loop playsinline></video>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
           <div class="card-header">
             <h3>CatWool</h3>
             <span class="pill">Hyper-casual</span>
           </div>
           <p class="muted">Fast, tactile game loop with reskin-friendly architecture.</p>
-          <ul class="bullets">
-            <li>Animation-view bridges to swap themes quickly.</li>
-            <li>Procedural level generator and bot simulations for progression pacing.</li>
-          </ul>
           <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.catwool&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
         <article class="card project">
+          <div class="project-media project-media--video">
+            <video class="project-media-video" src="assets/ChessBlitzFinal.mp4" autoplay muted loop playsinline></video>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
           <div class="card-header">
             <h3>ChessBlitz</h3>
             <span class="pill">2D puzzle</span>
           </div>
           <p class="muted">Chess puzzle game with progression and economy layers.</p>
-          <ul class="bullets">
-            <li>Progression systems, in-game economy, and player profile flows.</li>
-            <li>PvP multiplayer front-end integration and user registration.</li>
-          </ul>
           <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhugestudios.chessblitz.chessgame.friends.chess&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
         <article class="card project">
+          <div class="project-media project-media--video">
+            <video class="project-media-video" src="assets/AppleClicker.mp4" autoplay muted loop playsinline></video>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
           <div class="card-header">
             <h3>Apple Clicker</h3>
             <span class="pill">Clicker</span>
           </div>
           <p class="muted">Fast, satisfying tap loop designed for quick mobile sessions.</p>
-          <ul class="bullets">
-            <li>Lightweight progression and score pacing tuned for short play cycles.</li>
-          </ul>
           <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.free.apple" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
         <article class="card project">
+          <div class="project-media project-media--video">
+            <video class="project-media-video" src="assets/GemClicker.mp4" autoplay muted loop playsinline></video>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
           <div class="card-header">
             <h3>GemClicker</h3>
             <span class="pill">Clicker</span>
           </div>
           <p class="muted">Incremental clicker gameplay focused on steady rewards and upgrades.</p>
-          <ul class="bullets">
-            <li>Simple upgrade curve built for replayable sessions.</li>
-          </ul>
           <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.cookie" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
         <article class="card project">
+          <div class="project-media project-media--video">
+            <video class="project-media-video" src="assets/MasterChef.mp4" autoplay muted loop playsinline></video>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
           <div class="card-header">
             <h3>Master Chef Slider</h3>
             <span class="pill">Slider puzzle</span>
           </div>
           <p class="muted">Arcade slider game with clean UI and fast puzzle rounds.</p>
-          <ul class="bullets">
-            <li>Designed for quick completion loops and easy replay.</li>
-          </ul>
           <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.superchef" target="_blank" rel="noreferrer">Play on Google Play</a>
+        </article>
+        <article class="card project">
+          <div class="project-media project-media--video">
+            <video class="project-media-video" src="assets/Match3.mp4" autoplay muted loop playsinline></video>
+            <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
+              <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
+          <div class="card-header">
+            <h3>FruitCut</h3>
+            <span class="pill">Match 3</span>
+          </div>
+          <p class="muted">Juicy match-3 prototype focused on cascade tuning, boosters, and level flow.</p>
+          <span class="pill">Unpublished</span>
         </article>
       </div>
     </section>
@@ -243,22 +228,20 @@
       </div>
       <div class="columns">
         <div class="column">
-          <h3>Recent impact</h3>
+          <h3>Highlights</h3>
           <ul class="bullets">
-            <li>Designed HyperCore to standardize analytics, lifecycle helpers, managers, and utilities for every new build, cutting setup time for new titles.</li>
-            <li>Built EasyBundle to streamline prefab loading and reduce draw calls across UI heavy flows.</li>
-            <li>Shipped AI-assisted level design tooling for rapid content creation and iteration.</li>
-            <li>Mentored junior developers on architecture, editor tooling, and gameplay UX.</li>
+            <li>Built reusable frameworks that cut setup time and improve performance.</li>
+            <li>Designed modular gameplay systems with clean undo and extensibility.</li>
+            <li>Shipped LiveOps features and mentored engineers across teams.</li>
           </ul>
-        </div>
-        <div class="column">
-          <h3>Strengths</h3>
-          <ul class="bullets">
-            <li>Gameplay systems design with Factory, Command, and DI patterns.</li>
-            <li>Editor scripting that keeps designers fast: inspectors, view bridges, and debug surfaces.</li>
-            <li>Performance optimization across draw calls, memory budgets, and loading.</li>
-            <li>Cross-platform delivery with analytics, IAP, subscriptions, and LiveOps hooks.</li>
-          </ul>
+          <div class="chips">
+            <span class="chip">Unity</span>
+            <span class="chip">C#</span>
+            <span class="chip">Gameplay Systems</span>
+            <span class="chip">LiveOps</span>
+            <span class="chip">Performance</span>
+            <span class="chip">Editor Tools</span>
+          </div>
         </div>
       </div>
     </section>
@@ -267,171 +250,28 @@
       <div class="section-head">
         <div>
           <p class="eyebrow">Experience</p>
-          <h2>Career chapters that taught me speed, polish, and resilience.</h2>
+          <h2>Recent roles and teams.</h2>
         </div>
-        <p class="muted">From hyper-casual sprints to hybrid-casual retention loops, I pair clean architecture with a builder mindset.</p>
+        <p class="muted">A compact view of recent studios and responsibilities.</p>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">Feb 2023 - Present</div>
-          <div class="card">
-            <div class="card-header">
-              <h3>Senior Unity Developer - Super Huge Studios</h3>
-              <p class="muted">Bangalore, India</p>
-            </div>
-            <ul class="bullets">
-              <li>Created HyperCore, a reusable Unity framework with DI, analytics, sensory managers, lifecycle helpers, and extensions, reducing new project setup time.</li>
-              <li>Designed animation-view bridges and procedural level generation for CatWool to make reskins and theme swaps fast.</li>
-              <li>Built Solitaire Candy World gameplay with Factory and Command patterns to enable robust undo flows and modular mechanics.</li>
-              <li>Developed EasyBundle for modular asset bundle loading plus UI performance tuning to cut draw calls.</li>
-              <li>Implemented AI-assisted level design tools and LiveOps-ready features including IAP improvements and retention hooks.</li>
-              <li>Delivered ChessBlitz progression systems, economy, and multiplayer front-end integration.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Sep 2022 - Dec 2022</div>
-          <div class="card">
-            <div class="card-header">
-              <h3>Freelance - Vedantu</h3>
-              <p class="muted">Bangalore, India</p>
-            </div>
-            <ul class="bullets">
-              <li>Built gamification features for a learning app.</li>
-              <li>Integrated Firebase, Firestore, and Ads SDKs while optimizing existing features.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Aug 2022 - Sep 2022</div>
-          <div class="card">
-            <div class="card-header">
-              <h3>Freelance - TVS Metaverse</h3>
-              <p class="muted">Remote</p>
-            </div>
-            <ul class="bullets">
-              <li>Developed an open-world Unity experience for bike reveals and missions.</li>
-              <li>Implemented cinematic showcases using Cinemachine and custom camera flows.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Dec 2021 - Aug 2022</div>
-          <div class="card">
-            <div class="card-header">
-              <h3>SDE - Unity Dev - GetMega</h3>
-              <p class="muted">Bangalore, India</p>
-            </div>
-            <ul class="bullets">
-              <li>Ported multiple games to Unity, ensuring feature parity and performance targets.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Sep 2020 - Dec 2021</div>
-          <div class="card">
-            <div class="card-header">
-              <h3>Assistant SE - Unity Dev - NCore Games</h3>
-              <p class="muted">Bangalore, India</p>
-            </div>
-            <ul class="bullets">
-              <li>Contributed gameplay systems, UI, and optimization for TAPPI (side-scrolling musical) and FAUG (F2P multiplayer shooter).</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Dec 2019 - Sep 2020</div>
-          <div class="card">
-            <div class="card-header">
-              <h3>Unity Developer - Bibox Labs</h3>
-              <p class="muted">Bangalore, India</p>
-            </div>
-            <ul class="bullets">
-              <li>Built an electronic simulation app with Unity integrating image recognition and cloud APIs.</li>
-            </ul>
-          </div>
-        </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Senior Unity Developer — Super Huge Studios</h3>
+          <p class="muted">Feb 2023 - Present · Bangalore</p>
+          <p class="muted">Reusable architecture, gameplay systems, and LiveOps delivery.</p>
+        </article>
+        <article class="card">
+          <h3>Freelance Unity Developer — Vedantu + TVS Metaverse</h3>
+          <p class="muted">Aug 2022 - Dec 2022 · Remote/Bangalore</p>
+          <p class="muted">Gamification features, Firebase integrations, and cinematic Unity showcases.</p>
+        </article>
+        <article class="card">
+          <h3>Unity Developer — NCore Games</h3>
+          <p class="muted">Sep 2020 - Dec 2021 · Bangalore</p>
+          <p class="muted">Gameplay systems, UI, and optimization for multiplayer titles.</p>
+        </article>
       </div>
-    </section>
-
-    <section class="panel reveal" id="skills">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Capabilities</p>
-          <h2>Ship-ready stack for Unity production.</h2>
-        </div>
-        <p class="muted">I keep production practical: clean code, measurable performance, and tools that make teammates faster.</p>
-      </div>
-      <div class="columns skills">
-        <div class="column">
-          <h3>Core</h3>
-          <div class="chips">
-            <span class="chip">Unity</span>
-            <span class="chip">C#</span>
-            <span class="chip">Gameplay Programming</span>
-            <span class="chip">Prototyping</span>
-            <span class="chip">Unity Editor Scripting</span>
-          </div>
-        </div>
-        <div class="column">
-          <h3>Architecture</h3>
-          <div class="chips">
-            <span class="chip">Modular Framework Design</span>
-            <span class="chip">Design Patterns</span>
-            <span class="chip">Dependency Injection</span>
-            <span class="chip">Factory + Command</span>
-            <span class="chip">Lifecycle Helpers</span>
-          </div>
-        </div>
-        <div class="column">
-          <h3>Performance & LiveOps</h3>
-          <div class="chips">
-            <span class="chip">Performance Optimization</span>
-            <span class="chip">Analytics</span>
-            <span class="chip">IAP + Subscriptions</span>
-            <span class="chip">Asset Bundling</span>
-            <span class="chip">Retention Features</span>
-          </div>
-        </div>
-        <div class="column">
-          <h3>Languages</h3>
-          <div class="chips">
-            <span class="chip">Malayalam</span>
-            <span class="chip">English</span>
-            <span class="chip">Hindi</span>
-            <span class="chip">Tamil</span>
-            <span class="chip">Kannada</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel reveal" id="education">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2>Learning the craft, formally and independently.</h2>
-        </div>
-        <p class="muted">A mix of formal programs and self-driven learning keeps my fundamentals strong.</p>
-      </div>
-      <div class="edu-grid">
-        <div class="card">
-          <h3>Diploma in Game Developing</h3>
-          <p class="muted">Asian Institute of Design, Bangalore - Jun 2018 - Jul 2019</p>
-        </div>
-        <div class="card">
-          <h3>Game Programming (Self study)</h3>
-          <p class="muted">Online resources - 2017 - 2018</p>
-        </div>
-        <div class="card">
-          <h3>B.Tech in Electrical and Electronics Engineering</h3>
-          <p class="muted">College of Engineering Payyannur, Kerala - 2013 - 2017</p>
-        </div>
-        <div class="card">
-          <h3>Diploma in Electrical and Electronics Engineering</h3>
-          <p class="muted">Govt. Polytechnic, Kannur, Kerala - 2009 - 2012</p>
-        </div>
-      </div>
+      <p class="muted">Earlier roles: GetMega, Bibox Labs.</p>
     </section>
 
     <section class="panel reveal" id="contact">
@@ -458,10 +298,6 @@
         <div>
           <p class="muted">GitHub</p>
           <a class="contact-link" href="https://github.com/GhanasyamX" target="_blank" rel="noreferrer">github.com/GhanasyamX</a>
-        </div>
-        <div>
-          <p class="muted">Hobbies</p>
-          <p class="contact-link">Game developing, 3D printing, IOT, electronics</p>
         </div>
       </div>
     </section>
