@@ -18,19 +18,27 @@
 
   <header class="topbar">
     <div class="brand">Ghanasyam<span>KR</span></div>
-    <nav class="nav">
-      <a href="#featured">Featured</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="top-actions">
-      <a class="chip" href="https://github.com/GhanasyamX" target="_blank" rel="noreferrer">GitHub</a>
-      <a class="chip" href="https://linkedin.com/in/ghanasyamkr" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a class="btn ghost" href="mailto:ghanasyamkr@gmail.com">Email</a>
-      <a class="btn accent" href="Ghanasyam_UnityDev_2025v3.pdf" download>Download CV</a>
+    <div class="topbar-menu" id="topbar-menu">
+      <nav class="nav">
+        <a href="#featured">Featured</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="top-actions">
+        <a class="chip" href="https://github.com/GhanasyamX" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="chip" href="https://linkedin.com/in/ghanasyamkr" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="mailto:ghanasyamkr@gmail.com">Email</a>
+      </div>
     </div>
+    <a class="btn accent topbar-cta" href="Ghanasyam_UnityDev_2025v3.pdf" download>Download CV</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="topbar-menu">
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
   </header>
 
   <main>
@@ -131,89 +139,101 @@
           <p class="muted">Reusable Unity framework for hyper-casual prototyping and production with DI, analytics, lifecycle helpers, and sensory managers.</p>
           <a class="btn ghost" href="https://github.com/GhanasyamX/HyperCore" target="_blank" rel="noreferrer">View on GitHub</a>
         </article>
-        <article class="card project">
+        <article class="card project project--video">
           <div class="project-media project-media--video">
             <video class="project-media-video" src="assets/CatwoolVideo.mp4" autoplay muted loop playsinline></video>
             <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
               <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
             </button>
           </div>
-          <div class="card-header">
-            <h3>CatWool</h3>
-            <span class="pill">Hyper-casual</span>
+          <div class="project-content">
+            <div class="card-header">
+              <h3>CatWool</h3>
+              <span class="pill">Hyper-casual</span>
+            </div>
+            <p class="muted">Fast, tactile game loop with reskin-friendly architecture.</p>
+            <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.catwool&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
           </div>
-          <p class="muted">Fast, tactile game loop with reskin-friendly architecture.</p>
-          <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.catwool&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
-        <article class="card project">
+        <article class="card project project--video">
           <div class="project-media project-media--video">
             <video class="project-media-video" src="assets/ChessBlitzFinal.mp4" autoplay muted loop playsinline></video>
             <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
               <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
             </button>
           </div>
-          <div class="card-header">
-            <h3>ChessBlitz</h3>
-            <span class="pill">2D puzzle</span>
+          <div class="project-content">
+            <div class="card-header">
+              <h3>ChessBlitz</h3>
+              <span class="pill">2D puzzle</span>
+            </div>
+            <p class="muted">Chess puzzle game with progression and economy layers.</p>
+            <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhugestudios.chessblitz.chessgame.friends.chess&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
           </div>
-          <p class="muted">Chess puzzle game with progression and economy layers.</p>
-          <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhugestudios.chessblitz.chessgame.friends.chess&pcampaignid=web_share" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
-        <article class="card project">
+        <article class="card project project--video">
           <div class="project-media project-media--video">
             <video class="project-media-video" src="assets/AppleClicker.mp4" autoplay muted loop playsinline></video>
             <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
               <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
             </button>
           </div>
-          <div class="card-header">
-            <h3>Apple Clicker</h3>
-            <span class="pill">Clicker</span>
+          <div class="project-content">
+            <div class="card-header">
+              <h3>Apple Clicker</h3>
+              <span class="pill">Clicker</span>
+            </div>
+            <p class="muted">Fast, satisfying tap loop designed for quick mobile sessions.</p>
+            <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.free.apple" target="_blank" rel="noreferrer">Play on Google Play</a>
           </div>
-          <p class="muted">Fast, satisfying tap loop designed for quick mobile sessions.</p>
-          <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.free.apple" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
-        <article class="card project">
+        <article class="card project project--video">
           <div class="project-media project-media--video">
             <video class="project-media-video" src="assets/GemClicker.mp4" autoplay muted loop playsinline></video>
             <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
               <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
             </button>
           </div>
-          <div class="card-header">
-            <h3>GemClicker</h3>
-            <span class="pill">Clicker</span>
+          <div class="project-content">
+            <div class="card-header">
+              <h3>GemClicker</h3>
+              <span class="pill">Clicker</span>
+            </div>
+            <p class="muted">Incremental clicker gameplay focused on steady rewards and upgrades.</p>
+            <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.cookie" target="_blank" rel="noreferrer">Play on Google Play</a>
           </div>
-          <p class="muted">Incremental clicker gameplay focused on steady rewards and upgrades.</p>
-          <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.cookie" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
-        <article class="card project">
+        <article class="card project project--video">
           <div class="project-media project-media--video">
             <video class="project-media-video" src="assets/MasterChef.mp4" autoplay muted loop playsinline></video>
             <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
               <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
             </button>
           </div>
-          <div class="card-header">
-            <h3>Master Chef Slider</h3>
-            <span class="pill">Slider puzzle</span>
+          <div class="project-content">
+            <div class="card-header">
+              <h3>Master Chef Slider</h3>
+              <span class="pill">Slider puzzle</span>
+            </div>
+            <p class="muted">Arcade slider game with clean UI and fast puzzle rounds.</p>
+            <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.superchef" target="_blank" rel="noreferrer">Play on Google Play</a>
           </div>
-          <p class="muted">Arcade slider game with clean UI and fast puzzle rounds.</p>
-          <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.superhuge.superchef" target="_blank" rel="noreferrer">Play on Google Play</a>
         </article>
-        <article class="card project">
+        <article class="card project project--video">
           <div class="project-media project-media--video">
             <video class="project-media-video" src="assets/Match3.mp4" autoplay muted loop playsinline></video>
             <button class="video-restart" type="button" data-restart-target="video" aria-label="Restart video">
               <img class="video-restart__icon" src="assets/reloadButton.png" alt="" aria-hidden="true" />
             </button>
           </div>
-          <div class="card-header">
-            <h3>FruitCut</h3>
-            <span class="pill">Match 3</span>
+          <div class="project-content">
+            <div class="card-header">
+              <h3>FruitCut</h3>
+              <span class="pill">Match 3</span>
+            </div>
+            <p class="muted">Juicy match-3 prototype focused on cascade tuning, boosters, and level flow.</p>
+            <span class="pill">Unpublished</span>
           </div>
-          <p class="muted">Juicy match-3 prototype focused on cascade tuning, boosters, and level flow.</p>
-          <span class="pill">Unpublished</span>
         </article>
       </div>
     </section>
@@ -304,7 +324,7 @@
   </main>
 
   <footer class="footer">
-    <p>Crafted in Unity spirit. Last updated 2025.</p>
+    <p>Last updated 2025.</p>
     <a href="Ghanasyam_UnityDev_2025v3.pdf" download>Download resume</a>
   </footer>
 

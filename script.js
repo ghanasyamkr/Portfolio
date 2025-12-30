@@ -18,6 +18,36 @@ if (!prefersReducedMotion) {
   document.querySelectorAll('.reveal').forEach(section => section.classList.add('visible'));
 }
 
+const menuToggle = document.querySelector('.menu-toggle');
+const topbar = document.querySelector('.topbar');
+const topbarMenu = document.querySelector('#topbar-menu');
+
+if (menuToggle && topbar && topbarMenu) {
+  const setMenuState = isOpen => {
+    topbar.classList.toggle('is-open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  };
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = topbar.classList.contains('is-open');
+    setMenuState(!isOpen);
+  });
+
+  topbarMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 820) {
+        setMenuState(false);
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 820) {
+      setMenuState(false);
+    }
+  });
+}
+
 document.querySelectorAll('[data-restart-target]').forEach(button => {
   button.addEventListener('click', () => {
     const targetType = button.dataset.restartTarget;
