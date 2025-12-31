@@ -306,6 +306,18 @@ document.addEventListener('click', event => {
 
   if (info.type === 'download') {
     analytics.track('download_click', { href, link_text: label, section, project });
+    const isResumeDownload =
+      href.toLowerCase().endsWith('.pdf') && /download|resume|cv/i.test(label);
+    if (isResumeDownload) {
+      const fileName = href.split('/').pop();
+      analytics.track('resume_download', {
+        href,
+        file_name: fileName,
+        link_text: label,
+        section,
+        project
+      });
+    }
   }
 
   if (info.type === 'email') {
