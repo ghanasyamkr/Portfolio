@@ -310,6 +310,20 @@ main {
   border-radius: 2px;
 }
 
+.platform-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.platform-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
+  opacity: 0.9;
+}
+
 .hero__tags {
   display: flex;
   flex-wrap: wrap;
